@@ -97,6 +97,7 @@ body {
 .row {
   display: flex;
   flex-wrap: wrap;
+  
 }
 .sec-padding {
   padding: 80px 0;
@@ -296,11 +297,9 @@ body {
   height: 100%;
   width: 100%;
   background: rgba(0, 0, 0, 0.527);
-  display: none;
+ 
 }
-.home-section.active-black::before {
-  display: block;
-}
+
 
 .home-section .home-bg {
   position: absolute;
@@ -333,16 +332,16 @@ body {
   max-width: 700px;
   width: 100%;
   margin: auto;
+  background: rgba(255, 255, 255, 0.062);
   text-align: center;
-  background: var(--white-25);
   min-height: 280px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(15px);
   border-radius: 15px;
-  border: 1px solid var(--white-40);
+  border: 1px solid var(--white-25);
 }
 .home-text h1 {
   font-size: 49px;
@@ -430,6 +429,170 @@ body {
     opacity: 0.2;
     height: 470px;
 }
+
+/*---------------------------
+        menu section          
+----------------------------*/
+.menu-section
+{
+  background: var(--dark);
+  padding-bottom: 60px;
+  transition: 0.5s ease;
+}
+
+.menu-section .section-title
+{
+   margin-bottom: 40px;
+
+}
+
+.menu-tabs
+{
+  padding: 0 15px;
+  width:100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.menu-tab-item
+{
+  position: relative;
+  font-size: 18px;
+  font-family: inherit;
+  text-transform: capitalize;
+  border: none;
+  background: transparent;
+  font-weight: 500;
+  color: var(--white);
+  cursor: pointer;
+  margin:0 10px;
+  transition: color 0.3s ease;
+  display: inline-block;
+  transition: 0.5s ease;
+}
+.menu-tab-item:hover{
+  color: var(--main-color);
+}
+
+.menu-tab-item.active
+{
+  color: var(--main-color);
+  
+}
+
+
+.menu-tab-content
+{
+    display: none;
+    transition: 0.5s ease;
+    transform: scale(1.3);
+}
+
+.menu-tab-content.active
+{
+   display: block;
+   transition: 0.5s ease;
+   transform: scale(1);
+}
+
+
+.menu-item
+{
+  width:50%;
+  padding:20px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  position: relative;
+}
+
+.menu-item::after{
+  content:'';
+  position: absolute;
+  left:15px;
+  right:15px;
+  bottom:0;
+  border-bottom:2px dashed var(--dark-light);
+}
+
+.menu-item:nth-last-of-type(2)::after,
+.menu-item:nth-last-of-type(1)::after
+{
+  border: none;
+}
+
+.menu-item-title
+{
+  display: flex;
+  align-items: center;
+}
+
+.menu-item-title img
+{
+  max-width: 140px;
+  margin-right: 15px;
+  transition: 0.5s ease;
+}
+.menu-item:hover .menu-item-title h3
+{
+  color: var(--main-color);
+}
+.menu-item-title h3
+{
+  font-size: 16px;
+  text-transform: capitalize;
+  transition: color 0.3s ease;
+}
+.menu-item-price
+{
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--main-color);
+  transition: color 0.3s ease;
+}
+.menu-item:hover .menu-item-price
+{
+  color: var(--white);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*------------------------------
     Custom Scrollbar Start

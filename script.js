@@ -39,3 +39,19 @@ window.addEventListener("scroll",()=>{
     }
 })
 /*------------------------------Document--Sticky--Header--end------------------------------ */
+
+/*----------------------------Menu Tabs Start---------------------------- */
+const menuTabs = document.querySelector(".menu-tabs");
+menuTabs.addEventListener("click",(e)=>{
+    if(e.target.classList.contains("menu-tab-item") && !e.target.classList.contains("active"))
+    {
+        const target = e.target.getAttribute("data-target");
+        menuTabs.querySelector(".active").classList.remove("active");
+        e.target.classList.add("active");
+        const menuSection = document.querySelector(".menu-section");
+        menuSection.querySelector(".menu-tab-content.active").classList.remove("active");
+        
+        menuSection.querySelector(target).classList.add("active");
+    }
+})
+/*----------------------------Menu Tabs Ends ---------------------------- */
