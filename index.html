@@ -1,134 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Restaurent Websites</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-----------------------------Header Start------------------------------->
-    <header class="header">
-      <div class="container">
-        <div class="row justify-content-between align-items-center">
-          <div class="logo">
-            <a href="#"> Foodies-Hut </a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restaurent Websites</title>
+  <link rel="stylesheet" href="style.css" />
+  <!------------Font Awesome Start------------------------->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!------------Font Awesome End---------------------------->
+</head>
+
+<body>
+  <!-----------------------------Header Start------------------------------->
+  <header class="header">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="logo">
+          <a href="#"> Foodies-Hut </a>
+        </div>
+        <button class="nav-toggler" type="button">
+          <span></span>
+        </button>
+
+        <nav class="nav">
+          <ul>
+            <li class="nav-item"><a href="#home">Home</a></li>
+            <li class="nav-item"><a href="#about">About</a></li>
+            <li class="nav-item"><a href="#our-menu">Our Menu</a></li>
+            <li class="nav-item"><a href="#testimonial">Testimonial</a></li>
+            <li class="nav-item"><a href="#team">Teams</a></li>
+            <li class="nav-item"><a href="#footer">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-----------------------Header End-------------------------------->
+  <!-------------------- home section start --------------------------->
+  <section class="home-section" id="home">
+    <div class="home-bg"></div>
+    <div class="container">
+      <div class="row min-vh-100 align-items-center">
+        <div class="home-text">
+          <h1>Foodies Hut Restaurant</h1>
+          <h4>Welcome to the world of food</h4>
+          <p>
+            Food for all food lovers,All types of delecious food of every food
+            lovers.
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla,
+            repudiandae odio consequuntur debitis error aperiam autem .
+          </p>
+          <a href="#" class="btn">See more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-------------------- home section end ----------------------------->
+
+  <!-------------------- About section start --------------------------->
+  <section class="about-section sec-padding" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2 data-title="our story">About Us</h2>
+        </div>
+      </div>
+      <div class="row">
+        <img src="img/pic-1.png" class="hero-img" />
+        <div class="about-text">
+          <h3>Welocme To Foodies Hut Restaturant</h3>
+          <br />
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Dignissimos perspiciatis inventore atque, neque eius consequuntur
+            soluta ipsa minima.
+          </p>
+          <br />
+
+          <p>
+            Similique, consectetur recusandae, nisi ullam quibusdam expedita
+            sapiente aspernatur perferendis! Sed qui culpa labore quam
+            obcaecati architecto aliquam esse ea soluta? Delectus ea ut atque
+            quibusdam iure.
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel,
+            odit.Lorem ipsum dolor sit amet.
+          </p>
+          <a href="#our-menu" class="btn">check our menu</a>
+        </div>
+
+        <div class="about-img">
+          <div class="img-box">
+            <h3>20+ Years Experience</h3>
+            <img src="img/bg1.jpg" alt="images-about" />
           </div>
-          <button class="nav-toggler" type="button">
-            <span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-------------------- About section end  --------------------------->
+  <!-----------------Menu Section Start------------>
+  <section class="menu-section sec-padding" id="our-menu">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2 data-title="order-now">our menu</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="menu-tabs">
+          <button type="button" class="menu-tab-item active" data-target="#lunch">
+            Lunch
           </button>
-
-          <nav class="nav">
-            <ul>
-              <li class="nav-item"><a href="#home">Home</a></li>
-              <li class="nav-item"><a href="#about">About</a></li>
-              <li class="nav-item"><a href="#our-menu">Our Menu</a></li>
-              <li class="nav-item"><a href="#testimonial">Testimonial</a></li>
-              <li class="nav-item"><a href="#team">Teams</a></li>
-              <li class="nav-item"><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
+          <button type="button" class="menu-tab-item" data-target="#dinner">
+            Dinner
+          </button>
+          <button type="button" class="menu-tab-item" data-target="#drinks">
+            Drinks
+          </button>
+          <button type="button" class="menu-tab-item" data-target="#dessert">
+            Desserts
+          </button>
         </div>
       </div>
-    </header>
-    <!-----------------------Header End-------------------------------->
-    <!-------------------- home section start --------------------------->
-    <section class="home-section" id="home">
-      <div class="home-bg"></div>
-      <div class="container">
-        <div class="row min-vh-100 align-items-center">
-          <div class="home-text">
-            <h1>Foodies Hut Restaurant</h1>
-            <h4>Welcome to the world of food</h4>
-            <p>
-              Food for all food lovers,All types of delecious food of every food
-              lovers.
-            </p>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla,
-              repudiandae odio consequuntur debitis error aperiam autem .
-            </p>
-            <a href="#" class="btn">See more</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-------------------- home section end ----------------------------->
-
-    <!-------------------- About section start --------------------------->
-    <section class="about-section sec-padding" id="about">
-      <div class="container">
+      <!---------------------lunch tab open----------------------------->
+      <div class="row menu-tab-content active" id="lunch">
         <div class="row">
-          <div class="section-title">
-            <h2 data-title="our story">About Us</h2>
-          </div>
-        </div>
-        <div class="row">
-          <img src="img/pic-1.png" class="hero-img" />
-          <div class="about-text">
-            <h3>Welocme To Foodies Hut Restaturant</h3>
-            <br />
-
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Dignissimos perspiciatis inventore atque, neque eius consequuntur
-              soluta ipsa minima.
-            </p>
-            <br />
-
-            <p>
-              Similique, consectetur recusandae, nisi ullam quibusdam expedita
-              sapiente aspernatur perferendis! Sed qui culpa labore quam
-              obcaecati architecto aliquam esse ea soluta? Delectus ea ut atque
-              quibusdam iure.
-            </p>
-            <br />
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel,
-              odit.Lorem ipsum dolor sit amet.
-            </p>
-            <a href="#our-menu" class="btn">check our menu</a>
-          </div>
-
-          <div class="about-img">
-            <div class="img-box">
-              <h3>20+ Years Experience</h3>
-              <img src="img/bg1.jpg" alt="images-about" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-------------------- About section end  --------------------------->
-    <!-----------------Menu Section Start------------>
-    <section class="menu-section sec-padding" id="our-menu">
-      <div class="container">
-        <div class="row">
-          <div class="section-title">
-            <h2 data-title="order-now">our menu</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="menu-tabs">
-            <button type="button" class="menu-tab-item active" data-target="#lunch">
-              Lunch
-            </button>
-            <button type="button" class="menu-tab-item" data-target="#dinner">
-              Dinner
-            </button>
-            <button type="button" class="menu-tab-item" data-target="#drinks">
-              Drinks
-            </button>
-            <button type="button" class="menu-tab-item" data-target="#dessert">
-              Desserts
-            </button>
-          </div>
-        </div>
-        <!---------------------lunch tab open----------------------------->
-        <div class="row menu-tab-content active" id="lunch">
-          <div class="row">
           <!-----------------------------item1 lunch----------------------->
           <div class="menu-item">
             <div class="menu-item-title">
@@ -141,7 +146,7 @@
           <div class="menu-item">
             <div class="menu-item-title">
               <img src="img/lunch3.jpg" style="height: 100px; width: 150px" />
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, quod.</h3>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, quod.</h3>
             </div>
             <div class="menu-item-price">$60.00</div>
           </div>
@@ -161,7 +166,7 @@
             </div>
             <div class="menu-item-price">$120.00</div>
           </div>
-        
+
           <!-----------------------------item5 lunch----------------------->
           <div class="menu-item">
             <div class="menu-item-title">
@@ -195,17 +200,17 @@
             <div class="menu-item-price">$100.00</div>
           </div>
         </div>
-          <!-----------------------------item lunch end----------------------->
-        </div>
-        <!-----------------------------lunch tab close----------------------->
+        <!-----------------------------item lunch end----------------------->
+      </div>
+      <!-----------------------------lunch tab close----------------------->
 
-        <!--///////////////////////////////////////////////////
+      <!--///////////////////////////////////////////////////
 //////////////////////////////////////////////////////
 //////////////////////////////////////////////////////-->
 
-        <!-----------------------------dinner tab open----------------------->
-        <div class="row menu-tab-content" id="dinner" >
-          <div class="row">
+      <!-----------------------------dinner tab open----------------------->
+      <div class="row menu-tab-content" id="dinner">
+        <div class="row">
           <!-----------------dinner  item opens------------------------------>
           <!-----------------------------item1 dinner----------------------->
           <div class="menu-item">
@@ -274,13 +279,13 @@
           <!-----------------------------item dinner end----------------------->
         </div>
       </div>
-        <!-----------------------------dinner tab close----------------------->
-        <!--///////////////////////////////////////////////////
+      <!-----------------------------dinner tab close----------------------->
+      <!--///////////////////////////////////////////////////
 //////////////////////////////////////////////////////
 //////////////////////////////////////////////////////-->
-        <!-----------------------------drinks tab start----------------------->
-        <div class="row menu-tab-content" id="drinks">
-          <div class="row">
+      <!-----------------------------drinks tab start----------------------->
+      <div class="row menu-tab-content" id="drinks">
+        <div class="row">
           <!-----------------drink  item opens------------------------------>
           <!-----------------------------item1 drink----------------------->
           <div class="menu-item">
@@ -349,15 +354,15 @@
           <!-----------------------------item drink end-------------------->
         </div>
       </div>
-        <!-----------------------------drinks tab end------------------------->
+      <!-----------------------------drinks tab end------------------------->
 
-        <!---////////////////////////////////////////////////////////////
+      <!---////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////-->
 
-        <!-----------------------------dessert tab open------------------------->
-        <div class="row menu-tab-content" id="dessert">
-          <div class="row">
+      <!-----------------------------dessert tab open------------------------->
+      <div class="row menu-tab-content" id="dessert">
+        <div class="row">
           <!-----------------dessert  item opens------------------------------>
           <!-----------------------------item1 dessert----------------------->
           <div class="menu-item">
@@ -426,10 +431,238 @@
           <!-----------------------------item dessert end-------------------->
         </div>
       </div>
-        <!-----------------------------dessert tab end------------------------->
+      <!-----------------------------dessert tab end------------------------->
+    </div>
+  </section>
+  <!-----------------Menu Section End-------------->
+
+
+  <!--------------------Testimonial Section Start------------------>
+  <section class="testimonials-section sec-padding" id="testimonial">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2 data-title="testimonials">Some Feedback</h2>
+        </div>
       </div>
-    </section>
-    <!-----------------Menu Section End-------------->
-  </body>
-  <script src="script.js"></script>
+      <div class="row">
+        <div class="testi-item">
+          <div class="testi-author">
+            <div class="testi-author-name">
+              <h3>Shubham Sharma</h3>
+              <span>food specilist</span>
+            </div>
+            <div class="testi-author-img">
+              <img src="img/testimonial1.jpg" alt="testi-img">
+            </div>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic corrupti nostrum, illum fuga dolorum
+            excepturi consectetur velit quos quas, vitae at laborum! Rem, consectetur laboriosam?</p>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+
+        <div class="testi-item">
+          <div class="testi-author">
+            <div class="testi-author-name">
+              <h3>Shubham Sharma</h3>
+              <span>food specilist</span>
+            </div>
+            <div class="testi-author-img">
+              <img src="img/testimonial2.jpg" alt="testi-img">
+            </div>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic corrupti nostrum, illum fuga dolorum
+            excepturi consectetur velit quos quas, vitae at laborum! Rem, consectetur laboriosam?</p>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+
+
+
+        <div class="testi-item">
+          <div class="testi-author">
+            <div class="testi-author-name">
+              <h3>Shubham Sharma</h3>
+              <span>food specilist</span>
+            </div>
+            <div class="testi-author-img">
+              <img src="img/testimonial3.jpg" alt="testi-img">
+            </div>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic corrupti nostrum, illum fuga dolorum
+            excepturi consectetur velit quos quas, vitae at laborum! Rem, consectetur laboriosam?</p>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+
+
+
+        <div class="testi-item">
+          <div class="testi-author">
+            <div class="testi-author-name">
+              <h3>Shubham Sharma</h3>
+              <span>food specilist</span>
+            </div>
+            <div class="testi-author-img">
+              <img src="img/testimonial4.jpg" alt="testi-img">
+            </div>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic corrupti nostrum, illum fuga dolorum
+            excepturi consectetur velit quos quas, vitae at laborum! Rem, consectetur laboriosam?</p>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+
+
+        <div class="testi-item">
+          <div class="testi-author">
+            <div class="testi-author-name">
+              <h3>Shubham Sharma</h3>
+              <span>food specilist</span>
+            </div>
+            <div class="testi-author-img">
+              <img src="img/testimonial5.jpg" alt="testi-img">
+            </div>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic corrupti nostrum, illum fuga dolorum
+            excepturi consectetur velit quos quas, vitae at laborum! Rem, consectetur laboriosam?</p>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+
+
+
+        <div class="testi-item">
+          <div class="testi-author">
+            <div class="testi-author-name">
+              <h3>Shubham Sharma</h3>
+              <span>food specilist</span>
+            </div>
+            <div class="testi-author-img">
+              <img src="img/testimonial6.jpg" alt="testi-img">
+            </div>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic corrupti nostrum, illum fuga dolorum
+            excepturi consectetur velit quos quas, vitae at laborum! Rem, consectetur laboriosam?</p>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <!--------------------Testimonial Section End-------------------->
+
+  <!------------------Teams Section Start-------------------------->
+  <section class="team-section sec-padding" id="team">
+
+    <div class="container">
+
+      <div class="row">
+        <div class="section-title">
+          <h2 data-title="Our Team">Best Chefs</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="team-item">
+          <img src="img/chef5.jpg" alt="">
+          <div class="team-item-info">
+            <h2>Sam kumar</h2>
+            <p>Master Chef</p>
+          </div>
+        </div>
+
+        <div class="team-item">
+          <img src="img/chef1.jpg" alt="">
+          <div class="team-item-info">
+            <h2>Allen Mishra</h2>
+            <p>Junior Chef</p>
+          </div>
+        </div>
+
+        <div class="team-item">
+          <img src="img/chef4.jpg" alt="">
+          <div class="team-item-info">
+            <h2>Angela kumari</h2>
+            <p>Head Chef</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!------------------Teams Section End-------------------------->
+
+  <!-------------------Footer  Start-------------------------->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-item">
+          <h3>Our Location</h3>
+          <p>Foodies Hut,<br> 28-road MG marg,<br>near Subash Chauraha,<br>Cotton Green Sewri,<br>Mumbai,India-400308
+          </p>
+        </div>
+        <div class="footer-item">
+          <h3>Opening Hours</h3>
+          <p>Monday to Sunday<br>9:00AM - 9:30PM</p>
+        </div>
+        <div class="footer-item">
+          <h3>Contact Us</h3>
+          <p>+91 9753**2342</p>
+          <p>infogmail.com</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram-square"></i></a>
+            <a href="#"><i class="fab fa-instagram-square"></i></a>
+            <a href="#"><i class="fas fa-envelope-open-text"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="copyright">
+          &copy; 2021 - Designed By  Shubham Bawankar
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-------------------Footer  End---------------------------->
+
+</body>
+<script src="script.js"></script>
+
 </html>
