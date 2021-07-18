@@ -9,10 +9,17 @@
   <link rel="stylesheet" href="style.css" />
   <!------------Font Awesome Start------------------------->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!------------Font Awesome End---------------------------->
 </head>
 
 <body>
+  <!------------------Pre Loader Start-------------->
+  <div class="pageloader">
+    
+  </div>
+  <!------------------Pre Loader End--------------->
+
   <!-----------------------------Header Start------------------------------->
   <header class="header">
     <div class="container">
@@ -41,9 +48,9 @@
   <!-------------------- home section start --------------------------->
   <section class="home-section" id="home">
     <div class="home-bg"></div>
-    <div class="container">
+    <div class="container" >
       <div class="row min-vh-100 align-items-center">
-        <div class="home-text">
+        <div class="home-text" data-aos="fade-up"  data-aos-duration="1000">
           <h1>Foodies Hut Restaurant</h1>
           <h4>Welcome to the world of food</h4>
           <p>
@@ -67,12 +74,12 @@
     <div class="container">
       <div class="row">
         <div class="section-title">
-          <h2 data-title="our story">About Us</h2>
+          <h2 data-title="our story" data-aos="fade-up">About Us</h2>
         </div>
       </div>
       <div class="row">
         <img src="img/pic-1.png" class="hero-img" />
-        <div class="about-text">
+        <div class="about-text" data-aos="fade-right">
           <h3>Welocme To Foodies Hut Restaturant</h3>
           <br />
 
@@ -97,7 +104,7 @@
           <a href="#our-menu" class="btn">check our menu</a>
         </div>
 
-        <div class="about-img">
+        <div class="about-img" data-aos="fade-left">
           <div class="img-box">
             <h3>20+ Years Experience</h3>
             <img src="img/bg1.jpg" alt="images-about" />
@@ -112,11 +119,11 @@
     <div class="container">
       <div class="row">
         <div class="section-title">
-          <h2 data-title="order-now">our menu</h2>
+          <h2 data-title="order-now" data-aos="fade-up">our menu</h2>
         </div>
       </div>
       <div class="row">
-        <div class="menu-tabs">
+        <div class="menu-tabs" data-aos="fade-up">
           <button type="button" class="menu-tab-item active" data-target="#lunch">
             Lunch
           </button>
@@ -135,7 +142,7 @@
       <div class="row menu-tab-content active" id="lunch">
         <div class="row">
           <!-----------------------------item1 lunch----------------------->
-          <div class="menu-item">
+          <div class="menu-item" data-aos="fade-up-left">
             <div class="menu-item-title">
               <img src="img/lunch1.jpg" style="height: 100px; width: 150px" />
               <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, quod.</h3>
@@ -143,7 +150,7 @@
             <div class="menu-item-price">$40.00</div>
           </div>
           <!-----------------------------item2 lunch----------------------->
-          <div class="menu-item">
+          <div class="menu-item"  data-aos="fade-up-right">
             <div class="menu-item-title">
               <img src="img/lunch3.jpg" style="height: 100px; width: 150px" />
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, quod.</h3>
@@ -151,7 +158,7 @@
             <div class="menu-item-price">$60.00</div>
           </div>
           <!-----------------------------item3 lunch----------------------->
-          <div class="menu-item">
+          <div class="menu-item" data-aos="fade-up-left">
             <div class="menu-item-title">
               <img src="img/lunch4.jpg" style="height: 100px; width: 150px" />
               <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, quod.</h3>
@@ -159,7 +166,7 @@
             <div class="menu-item-price">$160.00</div>
           </div>
           <!-----------------------------item4 lunch----------------------->
-          <div class="menu-item">
+          <div class="menu-item"  data-aos="fade-up-right">
             <div class="menu-item-title">
               <img src="img/lunch5.jpg" style="height: 100px; width: 150px" />
               <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, quod.</h3>
@@ -168,23 +175,23 @@
           </div>
 
           <!-----------------------------item5 lunch----------------------->
-          <div class="menu-item">
-            <div class="menu-item-title">
+          <div class="menu-item" data-aos="fade-up-left">
+            <div class="menu-item-title"  >
               <img src="img/lunch6.jpg" style="height: 100px; width: 150px" />
               <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, quod.</h3>
             </div>
             <div class="menu-item-price">$180.00</div>
           </div>
           <!-----------------------------item6 lunch----------------------->
-          <div class="menu-item">
-            <div class="menu-item-title">
+          <div class="menu-item" data-aos="fade-up-right">
+            <div class="menu-item-title" >
               <img src="img/lunch7.jpg" style="height: 100px; width: 150px" />
               <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, quod.</h3>
             </div>
             <div class="menu-item-price">$200.00</div>
           </div>
           <!-----------------------------item7 lunch----------------------->
-          <div class="menu-item">
+          <div class="menu-item"  data-aos="fade-up-left">
             <div class="menu-item-title">
               <img src="img/lunch8.jpg" style="height: 100px; width: 150px" />
               <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, quod.</h3>
@@ -192,7 +199,7 @@
             <div class="menu-item-price">$90.00</div>
           </div>
           <!-----------------------------item8 lunch----------------------->
-          <div class="menu-item">
+          <div class="menu-item"  data-aos="fade-up-right">
             <div class="menu-item-title">
               <img src="img/lunch9.jpg" style="height: 100px; width: 150px" />
               <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, sequi!</h3>
@@ -213,16 +220,16 @@
         <div class="row">
           <!-----------------dinner  item opens------------------------------>
           <!-----------------------------item1 dinner----------------------->
-          <div class="menu-item">
-            <div class="menu-item-title">
+          <div class="menu-item" data-aos="fade-up-right">
+            <div class="menu-item-title"  >
               <img src="img/dinner1.jpg" style="height: 100px; width: 150px" />
               <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, quod.</h3>
             </div>
             <div class="menu-item-price">$40.00</div>
           </div>
           <!-----------------------------item2 dinner----------------------->
-          <div class="menu-item">
-            <div class="menu-item-title">
+          <div class="menu-item"  data-aos="fade-up-left">
+            <div class="menu-item-title" >
               <img src="img/dinner3.jpg" style="height: 100px; width: 150px" />
               <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, quod.</h3>
             </div>
@@ -230,7 +237,7 @@
           </div>
           <!-----------------------------item3 dinner----------------------->
           <div class="menu-item">
-            <div class="menu-item-title">
+            <div class="menu-item-title"  data-aos="fade-up-right">
               <img src="img/dinner4.jpg" style="height: 100px; width: 150px" />
               <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, quod.</h3>
             </div>
@@ -238,22 +245,22 @@
           </div>
           <!-----------------------------item4 dinner----------------------->
           <div class="menu-item">
-            <div class="menu-item-title">
+            <div class="menu-item-title"  data-aos="fade-up-left">
               <img src="img/dinner5.jpg" style="height: 100px; width: 150px" />
               <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, quod.</h3>
             </div>
             <div class="menu-item-price">$120.00</div>
           </div>
           <!-----------------------------item5 dinner----------------------->
-          <div class="menu-item">
-            <div class="menu-item-title">
+          <div class="menu-item" data-aos="fade-up-right">
+            <div class="menu-item-title"  >
               <img src="img/dinner6.jpg" style="height: 100px; width: 150px" />
               <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, quod.</h3>
             </div>
             <div class="menu-item-price">$180.00</div>
           </div>
           <!-----------------------------item6 dinner----------------------->
-          <div class="menu-item">
+          <div class="menu-item"  data-aos="fade-up-left">
             <div class="menu-item-title">
               <img src="img/dinner7.jpg" style="height: 100px; width: 150px" />
               <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, quod.</h3>
@@ -261,16 +268,16 @@
             <div class="menu-item-price">$200.00</div>
           </div>
           <!-----------------------------item7 dinner----------------------->
-          <div class="menu-item">
-            <div class="menu-item-title">
+          <div class="menu-item"  data-aos="fade-up-right">
+            <div class="menu-item-title" >
               <img src="img/dinner8.jpg" style="height: 100px; width: 150px" />
               <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, quod.</h3>
             </div>
             <div class="menu-item-price">$90.00</div>
           </div>
           <!-----------------------------item8 dinner----------------------->
-          <div class="menu-item">
-            <div class="menu-item-title">
+          <div class="menu-item"  data-aos="fade-up-left">
+            <div class="menu-item-title" >
               <img src="img/dinner2.jpg" style="height: 100px; width: 150px" />
               <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, quod.</h3>
             </div>
@@ -288,7 +295,7 @@
         <div class="row">
           <!-----------------drink  item opens------------------------------>
           <!-----------------------------item1 drink----------------------->
-          <div class="menu-item">
+          <div class="menu-item"  data-aos="fade-up-right">
             <div class="menu-item-title">
               <img src="img/drink1.jpg" style="height: 100px; width: 150px" />
               <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, quod.</h3>
@@ -296,7 +303,7 @@
             <div class="menu-item-price">$40.00</div>
           </div>
           <!-----------------------------item2 drink----------------------->
-          <div class="menu-item">
+          <div class="menu-item"  data-aos="fade-up-left">
             <div class="menu-item-title">
               <img src="img/drink3.jpg" style="height: 100px; width: 150px" />
               <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, quod.</h3>
@@ -304,7 +311,7 @@
             <div class="menu-item-price">$60.00</div>
           </div>
           <!-----------------------------item3 drink----------------------->
-          <div class="menu-item">
+          <div class="menu-item"  data-aos="fade-up-right">
             <div class="menu-item-title">
               <img src="img/drink4.jpg" style="height: 100px; width: 150px" />
               <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, quod.</h3>
@@ -312,7 +319,7 @@
             <div class="menu-item-price">$160.00</div>
           </div>
           <!-----------------------------item4 drink----------------------->
-          <div class="menu-item">
+          <div class="menu-item"  data-aos="fade-up-left">
             <div class="menu-item-title">
               <img src="img/drink5.jpg" style="height: 100px; width: 150px" />
               <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, quod.</h3>
@@ -320,7 +327,7 @@
             <div class="menu-item-price">$120.00</div>
           </div>
           <!-----------------------------item5 drink----------------------->
-          <div class="menu-item">
+          <div class="menu-item"  data-aos="fade-up-right">
             <div class="menu-item-title">
               <img src="img/drink6.jpg" style="height: 100px; width: 150px" />
               <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, quod.</h3>
@@ -328,7 +335,7 @@
             <div class="menu-item-price">$180.00</div>
           </div>
           <!-----------------------------item6 drink----------------------->
-          <div class="menu-item">
+          <div class="menu-item"  data-aos="fade-up-left">
             <div class="menu-item-title">
               <img src="img/drink7.jpg" style="height: 100px; width: 150px" />
               <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, quod.</h3>
@@ -336,7 +343,7 @@
             <div class="menu-item-price">$200.00</div>
           </div>
           <!-----------------------------item7 drink----------------------->
-          <div class="menu-item">
+          <div class="menu-item"  data-aos="fade-up-right">
             <div class="menu-item-title">
               <img src="img/drink8.jpg" style="height: 100px; width: 150px" />
               <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, iure!</h3>
@@ -344,7 +351,7 @@
             <div class="menu-item-price">$90.00</div>
           </div>
           <!-----------------------------item8 drink----------------------->
-          <div class="menu-item">
+          <div class="menu-item"  data-aos="fade-up-left">
             <div class="menu-item-title">
               <img src="img/drink2.jpg" style="height: 100px; width: 150px" />
               <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, quod.</h3>
@@ -365,7 +372,7 @@
         <div class="row">
           <!-----------------dessert  item opens------------------------------>
           <!-----------------------------item1 dessert----------------------->
-          <div class="menu-item">
+          <div class="menu-item"  data-aos="fade-up-right">
             <div class="menu-item-title">
               <img src="img/dessert1.jpg" style="height: 100px; width: 150px" />
               <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, quod.</h3>
@@ -373,7 +380,7 @@
             <div class="menu-item-price">$40.00</div>
           </div>
           <!-----------------------------item2 dessert----------------------->
-          <div class="menu-item">
+          <div class="menu-item"  data-aos="fade-up-left">
             <div class="menu-item-title">
               <img src="img/dessert3.jpg" style="height: 100px; width: 150px" />
               <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, quod.</h3>
@@ -381,7 +388,7 @@
             <div class="menu-item-price">$60.00</div>
           </div>
           <!-----------------------------item3 dessert----------------------->
-          <div class="menu-item">
+          <div class="menu-item" data-aos="fade-up-right">
             <div class="menu-item-title">
               <img src="img/dessert4.jpg" style="height: 100px; width: 150px" />
               <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, quod.</h3>
@@ -389,7 +396,7 @@
             <div class="menu-item-price">$160.00</div>
           </div>
           <!-----------------------------item4 dessert----------------------->
-          <div class="menu-item">
+          <div class="menu-item" data-aos="fade-up-left">
             <div class="menu-item-title">
               <img src="img/dessert5.jpg" style="height: 100px; width: 150px" />
               <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, quod.</h3>
@@ -397,7 +404,7 @@
             <div class="menu-item-price">$120.00</div>
           </div>
           <!-----------------------------item5 dessert----------------------->
-          <div class="menu-item">
+          <div class="menu-item" data-aos="fade-up-right">
             <div class="menu-item-title">
               <img src="img/dessert6.jpg" style="height: 100px; width: 150px" />
               <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, quod.</h3>
@@ -405,7 +412,7 @@
             <div class="menu-item-price">$180.00</div>
           </div>
           <!-----------------------------item6 dessert----------------------->
-          <div class="menu-item">
+          <div class="menu-item" data-aos="fade-up-left">
             <div class="menu-item-title">
               <img src="img/dessert7.jpg" style="height: 100px; width: 150px" />
               <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, quod.</h3>
@@ -413,7 +420,7 @@
             <div class="menu-item-price">$200.00</div>
           </div>
           <!-----------------------------item7 dessert----------------------->
-          <div class="menu-item">
+          <div class="menu-item"data-aos="fade-up-right">
             <div class="menu-item-title">
               <img src="img/dessert8.jpg" style="height: 100px; width: 150px" />
               <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, quod.</h3>
@@ -421,7 +428,7 @@
             <div class="menu-item-price">$90.00</div>
           </div>
           <!-----------------------------item8 dessert----------------------->
-          <div class="menu-item">
+          <div class="menu-item" data-aos="fade-up-left">
             <div class="menu-item-title">
               <img src="img/dessert2.jpg" style="height: 100px; width: 150px" />
               <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, quod.</h3>
@@ -442,11 +449,11 @@
     <div class="container">
       <div class="row">
         <div class="section-title">
-          <h2 data-title="testimonials">Some Feedback</h2>
+          <h2 data-title="testimonials" data-aos="fade-up">Some Feedback</h2>
         </div>
       </div>
       <div class="row">
-        <div class="testi-item">
+        <div class="testi-item" data-aos="flip-left" data-aos-duration="1000">
           <div class="testi-author">
             <div class="testi-author-name">
               <h3>Shubham Sharma</h3>
@@ -467,7 +474,7 @@
           </div>
         </div>
 
-        <div class="testi-item">
+        <div class="testi-item" data-aos="flip-left" data-aos-duration="1000">
           <div class="testi-author">
             <div class="testi-author-name">
               <h3>Shubham Sharma</h3>
@@ -490,7 +497,7 @@
 
 
 
-        <div class="testi-item">
+        <div class="testi-item" data-aos="flip-left" data-aos-duration="1000">
           <div class="testi-author">
             <div class="testi-author-name">
               <h3>Shubham Sharma</h3>
@@ -513,7 +520,7 @@
 
 
 
-        <div class="testi-item">
+        <div class="testi-item" data-aos="flip-right" data-aos-duration="1000">
           <div class="testi-author">
             <div class="testi-author-name">
               <h3>Shubham Sharma</h3>
@@ -535,7 +542,7 @@
         </div>
 
 
-        <div class="testi-item">
+        <div class="testi-item" data-aos="flip-right" data-aos-duration="1000">
           <div class="testi-author">
             <div class="testi-author-name">
               <h3>Shubham Sharma</h3>
@@ -558,7 +565,7 @@
 
 
 
-        <div class="testi-item">
+        <div class="testi-item" data-aos="flip-right" data-aos-duration="1000">
           <div class="testi-author">
             <div class="testi-author-name">
               <h3>Shubham Sharma</h3>
@@ -595,12 +602,12 @@
 
       <div class="row">
         <div class="section-title">
-          <h2 data-title="Our Team">Best Chefs</h2>
+          <h2 data-title="Our Team" data-aos="fade-up">Our Chefs</h2>
         </div>
       </div>
 
       <div class="row">
-        <div class="team-item">
+        <div class="team-item" data-aos="zoom-out-right" data-aos-duration="1000">
           <img src="img/chef5.jpg" alt="">
           <div class="team-item-info">
             <h2>Sam kumar</h2>
@@ -608,7 +615,7 @@
           </div>
         </div>
 
-        <div class="team-item">
+        <div class="team-item" data-aos="zoom-out" data-aos-duration="1000">
           <img src="img/chef1.jpg" alt="">
           <div class="team-item-info">
             <h2>Allen Mishra</h2>
@@ -616,7 +623,7 @@
           </div>
         </div>
 
-        <div class="team-item">
+        <div class="team-item" data-aos="zoom-out-left" data-aos-duration="1000">
           <img src="img/chef4.jpg" alt="">
           <div class="team-item-info">
             <h2>Angela kumari</h2>
@@ -632,16 +639,16 @@
   <footer class="footer" id="footer">
     <div class="container">
       <div class="row">
-        <div class="footer-item">
+        <div class="footer-item" data-aos="fade-up" data-aos-duration="1000" >
           <h3>Our Location</h3>
           <p>Foodies Hut,<br> 28-road MG marg,<br>near Subash Chauraha,<br>Cotton Green Sewri,<br>Mumbai,India-400308
           </p>
         </div>
-        <div class="footer-item">
+        <div class="footer-item" data-aos="fade-up" data-aos-duration="1000">
           <h3>Opening Hours</h3>
           <p>Monday to Sunday<br>9:00AM - 9:30PM</p>
         </div>
-        <div class="footer-item">
+        <div class="footer-item" data-aos="fade-up" data-aos-duration="1000">
           <h3>Contact Us</h3>
           <p>+91 9753**2342</p>
           <p>infogmail.com</p>
@@ -654,7 +661,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="copyright">
+        <div class="copyright" >
           &copy; 2021 - Designed By  Shubham Bawankar
         </div>
       </div>
@@ -663,6 +670,7 @@
   <!-------------------Footer  End---------------------------->
 
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="script.js"></script>
 
 </html>

@@ -60,6 +60,12 @@ ul {
   transition: all 1s ease forwards;
   position: relative;
 }
+section
+{
+  overflow: hidden;
+}
+
+
 .btn:hover {
   background: rgb(255, 188, 3);
 }
@@ -130,6 +136,53 @@ body {
 .min-vh-100 {
   min-height: 100vh;
 }
+
+/*---------------------
+   pageloader          
+---------------------*/
+.pageloader
+{
+  position: fixed;
+  left: 0;
+  top:0;
+  height: 100%;
+  width:100%;
+  background-color: var(--dark);
+  z-index: 999;
+  transition: all 0.6s ease;
+}
+
+.pageloader::before
+{
+  content:'';
+  position: absolute;
+  height: 4px;
+  width:100px;
+  background: var(--main-color);
+  left: calc( 50% - 50px);
+  top : calc( 50% - 2px);
+  animation:  pageloader 1s  linear  infinite;
+
+}
+
+.pageloader.fade-out
+{ 
+  opacity: 0;
+}
+
+@keyframes pageloader {
+  0%,100%
+  {
+    transform: translateX(-50px);
+  }
+  50%
+  {
+    transform: translateX(50px);
+  }
+  
+}
+
+
 /*---------------------
     header           
 ---------------------*/
@@ -141,6 +194,8 @@ body {
   z-index: 99;
   width: 100%;
 }
+
+
 .header::before {
   content: "";
   position: absolute;
@@ -364,6 +419,7 @@ body {
 
 .about-section {
   background: var(--dark-light);
+ 
 }
 .about-text,
 .about-img {
@@ -741,10 +797,73 @@ body {
   border-top: 1px solid var(--white-light);
 }
 
+/*---------------------------
+          Responsive  start        
+----------------------------*/
+@media(max-width:991px)
+{
+    .testi-item
+    {
+      width:calc( 50% - 30px);
+    }
+    .team-item{
+      width:50%;
+    }
+    .team-item:not(:last-child)
+    {
+      margin-bottom: 75px;
+    }
+}
 
+@media(max-width:767px)
+{
+  
+  .home-text h1{
+      font-size: 50px;
+      line-height: 65px;
+  }
+  .menu-item,
+  .about-text,
+  .about-img
+  {
+    width:100%;
+  }
+  .menu-item:nth-last-of-type(2):after{
+    border-bottom: 2px dashed var(--darklight);
+  }
+  .about-img
+  {
+    margin-top: 40px;
+  }
 
+  .footer-item
+  {
+    width:100%;
+  }
+  .about-text h3
+  {
+    font-size: 24px;
+  }
+  .footer-item:not(:last-child)
+  {
+    margin-bottom: 30px;
+  }
+  .testi-item
+  {
+    width: calc(100% - 30px)
+  }
+}
+@media(max-width:575px)
+{
+  .team-item{
+    width: 100%;
+  }
+  
+}
 
-
+/*---------------------------
+          Responsive end         
+----------------------------*/
 
 
 

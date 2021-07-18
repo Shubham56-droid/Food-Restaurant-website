@@ -1,3 +1,18 @@
+window.addEventListener("load",()=>{
+/*------------------------Page Loader---------------------------*/
+document.querySelector(".pageloader").classList.add("fade-out");
+setTimeout(function(){
+    document.querySelector(".pageloader").style.display="none";
+},600)
+/*--------------------animation on  scroll---------------------*/
+  AOS.init();
+});
+
+
+
+
+
+
 /*--------------------Toggle--NavBar--Start---------------------*/
 const navToggler = document.querySelector(".nav-toggler");
 navToggler.addEventListener("click",()=>{
@@ -52,6 +67,11 @@ menuTabs.addEventListener("click",(e)=>{
         menuSection.querySelector(".menu-tab-content.active").classList.remove("active");
         
         menuSection.querySelector(target).classList.add("active");
+
+    
+            /*--------------------animation on  scroll---------------------*/
+              AOS.init();
+          
     }
 })
 /*----------------------------Menu Tabs Ends ---------------------------- */
