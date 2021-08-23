@@ -14,6 +14,5 @@
 <img src="./img/Screenshot (355) (1).png" />
 <br/>
 <h3>Website Video</h3>
-<video controls>
-  <source src="./video/restaurant.mp4">
+<video controls src="./video/restaurant.mp4">
 </video>
