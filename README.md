@@ -14,11 +14,17 @@
 <br/>
 <h3>Website Images</h3>
 <hr/>
+<h4>Home page<h4/>
 <img src="./img/Screenshot (355) (1).png" />
+<h4>About page<h4/>
 <img src="./img/Screenshot (356).png" />
+<h4>Our Menu<h4/>
 <img src="./img/Screenshot (357).png" />
+<h4>Testimonial page<h4/>
 <img src="./img/Screenshot (358).png" />
+<h4>Team page<h4/>
 <img src="./img/Screenshot (359).png" />
+<h4>Footer page<h4/>
 <img src="./img/Screenshot (360).png" />
 <br/>
 <h3>Website Video</h3>
