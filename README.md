@@ -14,5 +14,4 @@
 <img src="./img/Screenshot (355) (1).png" />
 <br/>
 <h3>Website Video</h3>
-<video controls src="./video/restaurant.mp4" height="200" width="200">
-</video>
+https://github.com/Shubham56-droid/Food-Restaurant-website/blob/dc9a1376351a8d5b8b469fb61747a1faa7df1cda/video/restaurant%20(1).mp4
