@@ -11,7 +11,7 @@
 <p>It is a food restaurant website with resonsive design.Is has animation  with javascript effects.</p>
 <br/>
 <h3>Website Images</h3>
-<img src="./img/c722e23f-85a6-4d08-94f7-56f418327374.webm" />
+<img src="./img/screenshot(355).png" />
 <br/>
 <h3>Website Video</h3>
 <video width="320" height="240" controls>
